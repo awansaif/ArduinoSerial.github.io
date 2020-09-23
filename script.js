@@ -3,7 +3,7 @@ function myFunction() {
 	const requestOptions = {
   filters: [{ usbVendorId: 0x2341 }],
 };
-navigator.serial.requestPort(requestOptions)
+navigator.serial.getPorts(requestOptions)
 .then(device => {
 
 
